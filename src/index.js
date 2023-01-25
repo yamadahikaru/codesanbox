@@ -45,6 +45,7 @@ const createIncompleteList = (text) =>{
 
     // btnの生成
     const backButton = document.createElement("button");
+    backButton.className="back";
     backButton.innerText = "戻す";
     backButton.addEventListener("click" , () => {
       // 押された戻すボタンの親タグの削除
@@ -66,6 +67,7 @@ const createIncompleteList = (text) =>{
   
   // 削除btn生成
   const deleteButton = document.createElement("button");
+  deleteButton.className="delete";
   deleteButton.innerText = "削除" ;
   deleteButton.addEventListener("click", () => {
     // 押された親タグを未完了リストから削除
